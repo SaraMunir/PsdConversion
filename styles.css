@@ -57,6 +57,9 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 .w-40{
     width: 40%;
 }
+.w-md-40{
+    width: 40%;
+}
 .w-45{
     width: 45%;
 }
@@ -107,6 +110,9 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 }
 .pAll-15{
     padding: 15px;
+}
+.pAll-10{
+    padding: 10px;
 }
 .border{
     border: 1px solid rebeccapurple;
@@ -557,8 +563,9 @@ input[type=submit]:hover {
     right: 0;
     left: 0;
     z-index: 100;
-    padding: 120px 0px;
+    padding-top: 60px;
     visibility: hidden;
+    font-size: 1rem;
 }
 
 .imgHovr h4{
@@ -580,6 +587,11 @@ input[type=submit]:hover {
     position: relative;
     height: 45vh;
     width: 32vh;
+}
+.profCardBody{
+    /* border: 1px solid red; */
+    padding: 10px;
+    /* display: block; */
 }
 .profSocials{
     background: #ed145ccb;
@@ -662,6 +674,9 @@ footer{
     text-transform: uppercase;
     margin-bottom: 5px;
 }
+.ftrWidth{
+    width: 70%;
+}
 .commodo{
     color: white; 
     font-size: .8rem;
@@ -676,6 +691,12 @@ footer{
 .footHead{
     height: 10vh;
     /* border: 1px solid gold */
+}
+.footLogo{
+    width: 60%;
+}
+hr {
+    visibility: hidden;
 }
 @media only screen and (max-width: 1024px) {
     .scrollBox{
@@ -707,11 +728,20 @@ footer{
     .search {
         /* width: 5%; */
     }
+    .w-md-40{
+        width: 60%;
+    }
+
 
 }
 @media only screen and (max-width: 768px){
+    hr {
+        visibility: visible;
+        background: #4e4e4e;
+        border: 1px solid #4e4e4e;
+    }
     .w-md-33{
-        width: 50%;
+        width: 49%;
     }
     .BurgerVisible{
         visibility: visible;
@@ -798,6 +828,52 @@ footer{
         margin: 0 auto;
     }
     .imgHovr{
-        padding: 20px 10px;
+        padding-top: 50px;
+        /* padding: 20px 10px; */
+    }
+    .profCard{
+        width: 35vh;
+    }
+    .profImg{
+        height: 45vh;
+        width: 35vh;
+        border-radius: 7px;
+        object-fit: cover;
+    }
+    .ftrWidth{
+        width: 80%;
+    }
+    .imgHovr h4{
+        font-size: .7rem;}
+    
+}
+@media only screen and (max-width: 600px){
+    .w-md-40{
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 500px){
+    .ftrWidth{
+        width: 90%;
+    }
+    .w-md-33{
+        width: 100%;
+    }
+    .footLogo{
+        width: 40%;
+    }
+    .imgHovr{
+        padding-top: 1px;
+    }
+    
+}
+
+@media only screen and (max-width: 480px){
+
+    .ftrWidth{
+        width: 90%;
+    }
+    .w-md-33{
+        width: 100%;
     }
 }

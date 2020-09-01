@@ -112,7 +112,7 @@
     <section class="companyMission fullHeight">
         <div class="container">
             <div class="w-100 videoContainer">
-                <div class="w-40 videoBox">
+                <div class="w-md-40 videoBox">
                     <img class="w-100 videoImg" src="assets/image-2.jpeg" alt="">
                     <div class="playBtn">
                         <i class="fas fa-play play fntWhite"></i>
@@ -400,7 +400,7 @@
             </div>
         </div>
     </section>
-    <section class="container">
+    <section class="compCap">
         <div class="w-70 mxAuto">
             <div class="myRow">
                 <div class="percentage w-45 mxAuto">
@@ -518,14 +518,14 @@
         })
         function showNavMenu(){
             console.log('is anything happening')
-            $(".hamburger").addClass('BurgerHide')
+            $(".hamburger").hide('BurgerHide')
             $(".hamburger").removeClass('BurgerVisible')
-            $(".navRowOt").removeClass('navHide')
+            $(".navRowOt").show(500)
         }
         function closeMenu(){
-            $(".hamburger").removeClass('BurgerHide')
-            $(".hamburger").addClass('BurgerVisible')
-            $(".navRowOt").addClass('navHide')
+            $(".hamburger").show('slow')
+            // $(".hamburger").hide()
+            $(".navRowOt").hide(800)
 
         }
 

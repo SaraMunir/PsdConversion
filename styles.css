@@ -237,6 +237,10 @@ body {
 .container{
     padding: 50px;
 }
+.compCap{
+    padding: 0 50px 50px 50px;
+
+}
 
 
 /* navbar */
@@ -698,6 +702,7 @@ footer{
 hr {
     visibility: hidden;
 }
+
 @media only screen and (max-width: 1024px) {
     .scrollBox{
         height: 25vh;
@@ -739,6 +744,16 @@ hr {
         visibility: visible;
         background: #4e4e4e;
         border: 1px solid #4e4e4e;
+    }
+    .playBtn {
+        width: 40px;
+        height: 40px;
+        top: 40%;
+        right: 44%;
+    }
+    .play {
+        padding: 10px 0 10px 13px;
+        font-size: .8rem;
     }
     .w-md-33{
         width: 49%;
